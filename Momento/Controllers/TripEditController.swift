@@ -21,6 +21,7 @@ class TripEditController: UIViewController {
         case date
         case location
         case images
+        case category
     }
     
     private enum TripItem: Hashable {
@@ -31,6 +32,7 @@ class TripEditController: UIViewController {
         case location
         case addImage
         case displayImage(NSManagedObjectID)
+        case category
     }
 
     // MARK: - TableView vars
@@ -205,6 +207,15 @@ private extension TripEditController {
         }
         return nil
     }
+    
+    func categoryCell(for trip: Trip, indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: TripItemTableViewCell.defaultIdentifier, for: indexPath)
+        cell.contentConfiguration = UIHostingConfiguration(content: {
+            CategoryPickerView(trip: trip)
+        })
+        
+        return cell
+    }
 
     func configureDataSource() {
         dataSource = UITableViewDiffableDataSource
@@ -254,6 +265,8 @@ private extension TripEditController {
                 return addImageButtonCell(with: index)
             case .displayImage(let photoID):
                 return imageCell(with: photoID, indexPath: index)
+            case .category:
+                return categoryCell(for: trip, indexPath: index)
             }
         }
         tableView.dataSource = dataSource
@@ -262,15 +275,16 @@ private extension TripEditController {
     }
 
    func reloadStaticData() {
-        var currentSnapshot = NSDiffableDataSourceSnapshot<TripsSection, TripItem>()
-        currentSnapshot.appendSections([.main, .date, .location, .images])
-        currentSnapshot.appendItems([TripItem.title], toSection: .main)
-        currentSnapshot.appendItems([TripItem.notes], toSection: .main)
-        currentSnapshot.appendItems([TripItem.startDate], toSection: .date)
-        currentSnapshot.appendItems([TripItem.endDate], toSection: .date)
-        currentSnapshot.appendItems([TripItem.addImage], toSection: .images)
-        currentSnapshot.appendItems([TripItem.location], toSection: .location)
-        dataSource.apply(currentSnapshot)
+       var currentSnapshot = NSDiffableDataSourceSnapshot<TripsSection, TripItem>()
+       currentSnapshot.appendSections([.main, .date, .location, .category, .images])
+       currentSnapshot.appendItems([TripItem.title], toSection: .main)
+       currentSnapshot.appendItems([TripItem.notes], toSection: .main)
+       currentSnapshot.appendItems([TripItem.startDate], toSection: .date)
+       currentSnapshot.appendItems([TripItem.endDate], toSection: .date)
+       currentSnapshot.appendItems([TripItem.addImage], toSection: .images)
+       currentSnapshot.appendItems([TripItem.location], toSection: .location)
+       currentSnapshot.appendItems([TripItem.category], toSection: .category)
+       dataSource.apply(currentSnapshot)
     }
     
     private func reconfigureItem(_ item: TripItem) {
