@@ -1,9 +1,10 @@
-/*
-See LICENSE folder for this sample’s licensing information.
+//  Momento
+//
+//  Created by Aleksandr Skorotkin on 21.03.2023.
+//
+//  Abstract:
+//  A view controller class to show the  list of a trips.
 
-Abstract:
- A view controller class to show the  list of a trips.
-*/
 
 import UIKit
 import CoreData

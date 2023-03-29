@@ -1,9 +1,10 @@
-/*
-See LICENSE folder for this sample’s licensing information.
+//  Momento
+//
+//  Created by Aleksandr Skorotkin on 21.03.2023.
+//
+//  Abstract:
+//  MKPlacement extension to get the formatted address.
 
-Abstract:
-MKPlacement extension to get the formatted address.
-*/
 
 import MapKit
 import Contacts

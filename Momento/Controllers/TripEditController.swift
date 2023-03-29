@@ -1,14 +1,16 @@
-/*
-See LICENSE folder for this sample’s licensing information.
+//  Momento
+//
+//  Created by Aleksandr Skorotkin on 21.03.2023.
+//
+//  Abstract:
+//  Trip editing view controller to enter trip details.
 
-Abstract:
- Trip editing view controller to enter trip details.
-*/
 
 import UIKit
 import CoreData
 import PhotosUI
 import Foundation
+import SwiftUI
 
 class TripEditController: UIViewController {
 
@@ -76,7 +78,6 @@ class TripEditController: UIViewController {
 
     // MARK: - View configurations
 
-    /// Configure navigation bar with cancel and save button
     private func configureNavigationBar() {
         title = NSLocalizedString("Edit Trip", comment: "Navigation Bar Item to edit a trip")
         let cancelAction = UIAction { [unowned self] _ in
@@ -131,6 +132,15 @@ private extension TripEditController {
             return textCell
         }
         return nil
+    }
+    
+    func notesCell(for trip: Trip, indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: TripItemTableViewCell.defaultIdentifier, for: indexPath)
+        cell.contentConfiguration = UIHostingConfiguration(content: {
+            MultiLineNotesView(trip: trip)
+        })
+        
+        return cell
     }
 
     func datePickercCell(with date: Date,
@@ -209,11 +219,7 @@ private extension TripEditController {
                 }
                 return textCell
             case .notes:
-                let textCell = textCell(with: trip.notes, placeHolder: NSLocalizedString("Notes", comment: "Placeholder for the notes field"), indexPath: index)
-                textCell?.onTextChange { [unowned self] textField in
-                    trip.notes = textField.text ?? ""
-                }
-                return textCell
+                return notesCell(for: trip, indexPath: index)
             case .startDate:
                 let datePickerCell = datePickercCell(
                     with: trip.startDate,

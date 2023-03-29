@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E96A55129C9C0B00026AAE3 /* MultiLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E96A55029C9C0B00026AAE3 /* MultiLineTextField.swift */; };
+		1E96A55129C9C0B00026AAE3 /* MultiLineNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E96A55029C9C0B00026AAE3 /* MultiLineNotesView.swift */; };
 		5EAA810429AE850A0015AB07 /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA810329AE850A0015AB07 /* SampleCode.xcconfig */; };
 		5EAA812A29AE947F0015AB07 /* SampleTripsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA810529AE85320015AB07 /* SampleTripsData.json */; };
 		E7CA66352977CEFA00F32535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CA66342977CEFA00F32535 /* AppDelegate.swift */; };
@@ -34,7 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E96A55029C9C0B00026AAE3 /* MultiLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineTextField.swift; sourceTree = "<group>"; };
+		1E96A55029C9C0B00026AAE3 /* MultiLineNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineNotesView.swift; sourceTree = "<group>"; };
 		5EAA810329AE850A0015AB07 /* SampleCode.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
 		5EAA810529AE85320015AB07 /* SampleTripsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleTripsData.json; sourceTree = "<group>"; };
 		E7CA66312977CEFA00F32535 /* Momento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momento.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +76,7 @@
 		1E96A54F29C9C0960026AAE3 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				1E96A55029C9C0B00026AAE3 /* MultiLineTextField.swift */,
+				1E96A55029C9C0B00026AAE3 /* MultiLineNotesView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -105,7 +105,7 @@
 		E7CA66282977CEFA00F32535 = {
 			isa = PBXGroup;
 			children = (
-				E7CA66332977CEFA00F32535 /* SampleApp */,
+				E7CA66332977CEFA00F32535 /* Momento */,
 				E7CA66322977CEFA00F32535 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E7CA66332977CEFA00F32535 /* SampleApp */ = {
+		E7CA66332977CEFA00F32535 /* Momento */ = {
 			isa = PBXGroup;
 			children = (
 				E7FF524629ADD6DF0033FB70 /* Configuration */,
@@ -128,7 +128,7 @@
 				E7CA66672977D22D00F32535 /* Models */,
 				5EAA810629AE88E00015AB07 /* Supporting Files */,
 			);
-			path = SampleApp;
+			path = Momento;
 			sourceTree = "<group>";
 		};
 		E7CA66672977D22D00F32535 /* Models */ = {
@@ -260,7 +260,7 @@
 				E7CA667F2977D4CB00F32535 /* MKPlacemark+Extension.swift in Sources */,
 				E7CA669F297A80A500F32535 /* Location+CoreDataClass.swift in Sources */,
 				E7CA66352977CEFA00F32535 /* AppDelegate.swift in Sources */,
-				1E96A55129C9C0B00026AAE3 /* MultiLineTextField.swift in Sources */,
+				1E96A55129C9C0B00026AAE3 /* MultiLineNotesView.swift in Sources */,
 				E7CA663F2977CEFA00F32535 /* SampleApp.xcdatamodeld in Sources */,
 				E7CA66832978116000F32535 /* SampleData.swift in Sources */,
 				E7CA66372977CEFA00F32535 /* SceneDelegate.swift in Sources */,
@@ -414,10 +414,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "SampleApp/Development\\ Assets/SampleTripsData.json";
+				DEVELOPMENT_ASSET_PATHS = "Momento/Development\\ Assets/SampleTripsData.json";
 				DEVELOPMENT_TEAM = YB3MVSHSDQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_FILE = Momento/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -446,10 +446,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "SampleApp/Development\\ Assets/SampleTripsData.json";
+				DEVELOPMENT_ASSET_PATHS = "Momento/Development\\ Assets/SampleTripsData.json";
 				DEVELOPMENT_TEAM = YB3MVSHSDQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_FILE = Momento/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

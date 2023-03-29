@@ -1,9 +1,10 @@
-/*
-See LICENSE folder for this sample’s licensing information.
+//  Momento
+//
+//  Created by Aleksandr Skorotkin on 21.03.2023.
+//
+//  Abstract:
+//  Trip helpers holds enumerations and constants specific to trips.
 
-Abstract:
- Trip helpers holds enumerations and constants specific to trips.
-*/
 
 import Foundation
 

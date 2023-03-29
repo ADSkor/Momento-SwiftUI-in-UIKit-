@@ -1,13 +1,13 @@
 //
-//  MultiLineTextField.swift
-//  SampleApp
+//  MultiLineNotesView.swift
+//  Momento
 //
 //  Created by Aleksandr Skorotkin on 21.03.2023.
 //
 
 import SwiftUI
 
-struct MultiLineTextField: View {
+struct MultiLineNotesView: View {
     
     @ObservedObject var trip: Trip
     
@@ -20,8 +20,8 @@ struct MultiLineTextField: View {
     }
 }
 
-struct MultiLineTextField_Previews: PreviewProvider {
+struct MultiLineNotesView_Previews: PreviewProvider {
     static var previews: some View {
-        MultiLineTextField(trip: .preview)
+        MultiLineNotesView(trip: .preview)
     }
 }

@@ -1,9 +1,10 @@
-/*
-See LICENSE folder for this sample’s licensing information.
+//  Momento
+//
+//  Created by Aleksandr Skorotkin on 21.03.2023.
+//
+//  Abstract:
+//  An extension that wraps the related methods for managing trips.
 
-Abstract:
- An extension that wraps the related methods for managing trips.
-*/
 
 import Foundation
 

@@ -1,9 +1,10 @@
-/*
-See LICENSE folder for this sample’s licensing information.
+//  Momento
+//
+//  Created by Aleksandr Skorotkin on 21.03.2023.
+//
+//  Abstract:
+//  Search locations using MapKit Seach APIs
 
-Abstract:
-Search locations using MapKit Seach APIs
-*/
 
 import UIKit
 import MapKit

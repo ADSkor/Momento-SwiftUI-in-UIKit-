@@ -1,9 +1,10 @@
-/*
-See LICENSE folder for this sample’s licensing information.
+//  Momento
+//
+//  Created by Aleksandr Skorotkin on 21.03.2023.
+//
+//  Abstract:
+//  A class that sets up the Core Data stack.
 
-Abstract:
- A class that sets up the Core Data stack.
-*/
 
 import Foundation
 import CoreData

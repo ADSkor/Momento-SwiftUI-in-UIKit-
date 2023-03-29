@@ -1,9 +1,10 @@
-/*
-See LICENSE folder for this sample’s licensing information.
+//  Momento
+//
+//  Created by Aleksandr Skorotkin on 21.03.2023.
+//
+//  Abstract:
+//  UITableViewCell subclasses to use in TripDetailViewController
 
-Abstract:
- UITableViewCell subclasses to use in TripDetailViewController
-*/
 
 import UIKit
 
