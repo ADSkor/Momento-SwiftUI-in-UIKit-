@@ -49,7 +49,7 @@ class TripLogsController: UIViewController {
 
     /// Configure navigation bar with title and a add button
     private func configureNavigationBar() {
-        title = NSLocalizedString("Trips", comment: "Navigation bar title")
+        title = NSLocalizedString("Momento", comment: "Navigation bar title")
         navigationController?.navigationBar.prefersLargeTitles = true
         let navBar = navigationController?.navigationBar
         navBar?.scrollEdgeAppearance = navBar?.standardAppearance

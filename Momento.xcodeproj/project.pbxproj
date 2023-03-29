@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1E96A55129C9C0B00026AAE3 /* MultiLineNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E96A55029C9C0B00026AAE3 /* MultiLineNotesView.swift */; };
-		5EAA810429AE850A0015AB07 /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA810329AE850A0015AB07 /* SampleCode.xcconfig */; };
 		5EAA812A29AE947F0015AB07 /* SampleTripsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA810529AE85320015AB07 /* SampleTripsData.json */; };
 		E7CA66352977CEFA00F32535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CA66342977CEFA00F32535 /* AppDelegate.swift */; };
 		E7CA66372977CEFA00F32535 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CA66362977CEFA00F32535 /* SceneDelegate.swift */; };
@@ -35,7 +34,6 @@
 
 /* Begin PBXFileReference section */
 		1E96A55029C9C0B00026AAE3 /* MultiLineNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineNotesView.swift; sourceTree = "<group>"; };
-		5EAA810329AE850A0015AB07 /* SampleCode.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
 		5EAA810529AE85320015AB07 /* SampleTripsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleTripsData.json; sourceTree = "<group>"; };
 		E7CA66312977CEFA00F32535 /* Momento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CA66342977CEFA00F32535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 		E7CA66332977CEFA00F32535 /* Momento */ = {
 			isa = PBXGroup;
 			children = (
-				E7FF524629ADD6DF0033FB70 /* Configuration */,
 				E74016B42993A68D000EBA32 /* Development Assets */,
 				E7CA66772977D4A400F32535 /* Views */,
 				E7CA66702977D42700F32535 /* Controllers */,
@@ -167,14 +164,6 @@
 				E7CA66792977D4B600F32535 /* TripItemTableViewCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		E7FF524629ADD6DF0033FB70 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				5EAA810329AE850A0015AB07 /* SampleCode.xcconfig */,
-			);
-			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,7 +227,6 @@
 				E7CA66442977CEFC00F32535 /* LaunchScreen.storyboard in Resources */,
 				E7CA66412977CEFC00F32535 /* Assets.xcassets in Resources */,
 				5EAA812A29AE947F0015AB07 /* SampleTripsData.json in Resources */,
-				5EAA810429AE850A0015AB07 /* SampleCode.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +276,6 @@
 /* Begin XCBuildConfiguration section */
 		E7CA66462977CEFC00F32535 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EAA810329AE850A0015AB07 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -351,7 +338,6 @@
 		};
 		E7CA66472977CEFC00F32535 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EAA810329AE850A0015AB07 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -408,7 +394,6 @@
 		};
 		E7CA66492977CEFC00F32535 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EAA810329AE850A0015AB07 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,7 +425,6 @@
 		};
 		E7CA664A2977CEFC00F32535 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EAA810329AE850A0015AB07 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
