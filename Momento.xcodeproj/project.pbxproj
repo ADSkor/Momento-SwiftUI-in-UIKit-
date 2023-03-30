@@ -16,6 +16,9 @@
 		1E4853BA29D51D70000DC891 /* TripHorizontalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853B929D51D70000DC891 /* TripHorizontalListView.swift */; };
 		1E4853BC29D5233A000DC891 /* TripsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853BB29D5233A000DC891 /* TripsGridView.swift */; };
 		1E4853BE29D52660000DC891 /* TripSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853BD29D52660000DC891 /* TripSectionHeaderView.swift */; };
+		1E4853C029D52936000DC891 /* CategoriesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853BF29D52936000DC891 /* CategoriesSectionView.swift */; };
+		1E4853C229D5556D000DC891 /* TripEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853C129D5556D000DC891 /* TripEditView.swift */; };
+		1E4853C529D5580B000DC891 /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853C429D5580B000DC891 /* TripDetailView.swift */; };
 		1E96A55129C9C0B00026AAE3 /* MultiLineNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E96A55029C9C0B00026AAE3 /* MultiLineNotesView.swift */; };
 		5EAA812A29AE947F0015AB07 /* SampleTripsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA810529AE85320015AB07 /* SampleTripsData.json */; };
 		E7CA66352977CEFA00F32535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CA66342977CEFA00F32535 /* AppDelegate.swift */; };
@@ -49,6 +52,9 @@
 		1E4853B929D51D70000DC891 /* TripHorizontalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHorizontalListView.swift; sourceTree = "<group>"; };
 		1E4853BB29D5233A000DC891 /* TripsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsGridView.swift; sourceTree = "<group>"; };
 		1E4853BD29D52660000DC891 /* TripSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSectionHeaderView.swift; sourceTree = "<group>"; };
+		1E4853BF29D52936000DC891 /* CategoriesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesSectionView.swift; sourceTree = "<group>"; };
+		1E4853C129D5556D000DC891 /* TripEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripEditView.swift; sourceTree = "<group>"; };
+		1E4853C429D5580B000DC891 /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
 		1E96A55029C9C0B00026AAE3 /* MultiLineNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineNotesView.swift; sourceTree = "<group>"; };
 		5EAA810529AE85320015AB07 /* SampleTripsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleTripsData.json; sourceTree = "<group>"; };
 		E7CA66312977CEFA00F32535 /* Momento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momento.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,19 +91,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E4853C329D557D6000DC891 /* BridgeGromSwiftUIToUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1E4853C129D5556D000DC891 /* TripEditView.swift */,
+				1E4853C429D5580B000DC891 /* TripDetailView.swift */,
+			);
+			path = BridgeGromSwiftUIToUIKit;
+			sourceTree = "<group>";
+		};
 		1E96A54F29C9C0960026AAE3 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1E4853C329D557D6000DC891 /* BridgeGromSwiftUIToUIKit */,
+				1E4853B129D3F888000DC891 /* TripLargeCardView.swift */,
+				1E4853AF29D3F550000DC891 /* TripsContentView.swift */,
 				1E96A55029C9C0B00026AAE3 /* MultiLineNotesView.swift */,
 				1E4853AD29D3EF36000DC891 /* CategoryPickerView.swift */,
-				1E4853AF29D3F550000DC891 /* TripsContentView.swift */,
-				1E4853B129D3F888000DC891 /* TripLargeCardView.swift */,
 				1E4853B329D3FB97000DC891 /* RecentTripsSectionView.swift */,
 				1E4853B529D51AD1000DC891 /* TripCardView.swift */,
 				1E4853B729D51C88000DC891 /* FavoriteTripsSectionView.swift */,
 				1E4853B929D51D70000DC891 /* TripHorizontalListView.swift */,
 				1E4853BB29D5233A000DC891 /* TripsGridView.swift */,
 				1E4853BD29D52660000DC891 /* TripSectionHeaderView.swift */,
+				1E4853BF29D52936000DC891 /* CategoriesSectionView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -274,13 +291,16 @@
 				1E4853B429D3FB97000DC891 /* RecentTripsSectionView.swift in Sources */,
 				1E96A55129C9C0B00026AAE3 /* MultiLineNotesView.swift in Sources */,
 				E7CA663F2977CEFA00F32535 /* SampleApp.xcdatamodeld in Sources */,
+				1E4853C029D52936000DC891 /* CategoriesSectionView.swift in Sources */,
 				E7CA66832978116000F32535 /* SampleData.swift in Sources */,
 				E7CA66372977CEFA00F32535 /* SceneDelegate.swift in Sources */,
 				1E4853B229D3F888000DC891 /* TripLargeCardView.swift in Sources */,
+				1E4853C529D5580B000DC891 /* TripDetailView.swift in Sources */,
 				E7CA66652977D22200F32535 /* Trip+CoreDataClass.swift in Sources */,
 				E7CA66692977D25C00F32535 /* PersistanceController.swift in Sources */,
 				1E4853BA29D51D70000DC891 /* TripHorizontalListView.swift in Sources */,
 				1E4853BC29D5233A000DC891 /* TripsGridView.swift in Sources */,
+				1E4853C229D5556D000DC891 /* TripEditView.swift in Sources */,
 				1E4853B029D3F550000DC891 /* TripsContentView.swift in Sources */,
 				E7CA66762977D49200F32535 /* TripLocationSearchController.swift in Sources */,
 				E7CA66982979311A00F32535 /* PersistanceController+Trip.swift in Sources */,

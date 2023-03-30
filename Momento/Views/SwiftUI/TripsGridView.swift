@@ -29,7 +29,9 @@ struct TripsGridView: View {
         ScrollView {
             LazyVGrid(columns: columns) {
                 ForEach(trips) { trip in
-                    TripCardView(trip: trip)
+                    NavigationLink(value: ActiveNavigationDestination.detailView(trip)) {
+                        TripCardView(trip: trip)
+                    }
                 }
             }
         }

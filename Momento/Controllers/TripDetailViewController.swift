@@ -69,6 +69,7 @@ class TripDetailViewController: UIViewController, UICollectionViewDelegate {
     // MARK: - Options Menu Setup
 
     private func generateOptionsMenu() {
+        let navigationItem = parent?.navigationItem ?? navigationItem
         navigationItem.title = trip.title
         let favoriteAttributes = favoriteActionAttributes()
         let viewContext = PersistenceController.shared.persistentContainer.viewContext

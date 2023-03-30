@@ -20,7 +20,7 @@ struct TripSectionHeaderView: View {
                 .bold()
                 .foregroundColor(.primary)
             Spacer()
-            NavigationLink(value: sectionFilter) {
+            NavigationLink(value: ActiveNavigationDestination.tripListView(sectionFilter, navigationTitle)) {
                 Text("See All")
             }
         }

@@ -26,11 +26,13 @@ struct TripHorizontalListView: View {
         ScrollView(.horizontal) {
             HStack {
                 ForEach(trips) { trip in
-                    switch tripCardSize {
-                    case .largeCard:
-                        TripLargeCardView(trip: trip)
-                    case .regularCard:
-                        TripCardView(trip: trip)
+                    NavigationLink(value: ActiveNavigationDestination.detailView(trip)) {
+                        switch tripCardSize {
+                        case .largeCard:
+                            TripLargeCardView(trip: trip)
+                        case .regularCard:
+                            TripCardView(trip: trip)
+                        }
                     }
                 }
             }
