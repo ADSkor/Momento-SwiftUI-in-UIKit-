@@ -12,11 +12,15 @@ struct TripsContentView: View {
         NavigationStack {
             List {
                 RecentTripsSectionView()
+                FavoriteTripsSectionView()
             }
             .listStyle(.plain)
             .navigationTitle("Momento")
             .navigationBarTitleDisplayMode(.large)
             .toolbarBackground(.visible, for: .navigationBar)
+            .navigationDestination(for: TripFilters.self) { filter in
+                TripsGridView(filter: filter)
+            }
         }
     }
 }

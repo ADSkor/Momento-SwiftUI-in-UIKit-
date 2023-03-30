@@ -11,6 +11,11 @@
 		1E4853B029D3F550000DC891 /* TripsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853AF29D3F550000DC891 /* TripsContentView.swift */; };
 		1E4853B229D3F888000DC891 /* TripLargeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853B129D3F888000DC891 /* TripLargeCardView.swift */; };
 		1E4853B429D3FB97000DC891 /* RecentTripsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853B329D3FB97000DC891 /* RecentTripsSectionView.swift */; };
+		1E4853B629D51AD1000DC891 /* TripCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853B529D51AD1000DC891 /* TripCardView.swift */; };
+		1E4853B829D51C88000DC891 /* FavoriteTripsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853B729D51C88000DC891 /* FavoriteTripsSectionView.swift */; };
+		1E4853BA29D51D70000DC891 /* TripHorizontalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853B929D51D70000DC891 /* TripHorizontalListView.swift */; };
+		1E4853BC29D5233A000DC891 /* TripsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853BB29D5233A000DC891 /* TripsGridView.swift */; };
+		1E4853BE29D52660000DC891 /* TripSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4853BD29D52660000DC891 /* TripSectionHeaderView.swift */; };
 		1E96A55129C9C0B00026AAE3 /* MultiLineNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E96A55029C9C0B00026AAE3 /* MultiLineNotesView.swift */; };
 		5EAA812A29AE947F0015AB07 /* SampleTripsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA810529AE85320015AB07 /* SampleTripsData.json */; };
 		E7CA66352977CEFA00F32535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CA66342977CEFA00F32535 /* AppDelegate.swift */; };
@@ -39,6 +44,11 @@
 		1E4853AF29D3F550000DC891 /* TripsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsContentView.swift; sourceTree = "<group>"; };
 		1E4853B129D3F888000DC891 /* TripLargeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripLargeCardView.swift; sourceTree = "<group>"; };
 		1E4853B329D3FB97000DC891 /* RecentTripsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTripsSectionView.swift; sourceTree = "<group>"; };
+		1E4853B529D51AD1000DC891 /* TripCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCardView.swift; sourceTree = "<group>"; };
+		1E4853B729D51C88000DC891 /* FavoriteTripsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTripsSectionView.swift; sourceTree = "<group>"; };
+		1E4853B929D51D70000DC891 /* TripHorizontalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHorizontalListView.swift; sourceTree = "<group>"; };
+		1E4853BB29D5233A000DC891 /* TripsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsGridView.swift; sourceTree = "<group>"; };
+		1E4853BD29D52660000DC891 /* TripSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSectionHeaderView.swift; sourceTree = "<group>"; };
 		1E96A55029C9C0B00026AAE3 /* MultiLineNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineNotesView.swift; sourceTree = "<group>"; };
 		5EAA810529AE85320015AB07 /* SampleTripsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleTripsData.json; sourceTree = "<group>"; };
 		E7CA66312977CEFA00F32535 /* Momento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momento.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +93,11 @@
 				1E4853AF29D3F550000DC891 /* TripsContentView.swift */,
 				1E4853B129D3F888000DC891 /* TripLargeCardView.swift */,
 				1E4853B329D3FB97000DC891 /* RecentTripsSectionView.swift */,
+				1E4853B529D51AD1000DC891 /* TripCardView.swift */,
+				1E4853B729D51C88000DC891 /* FavoriteTripsSectionView.swift */,
+				1E4853B929D51D70000DC891 /* TripHorizontalListView.swift */,
+				1E4853BB29D5233A000DC891 /* TripsGridView.swift */,
+				1E4853BD29D52660000DC891 /* TripSectionHeaderView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -245,14 +260,17 @@
 			files = (
 				E7CA66662977D22200F32535 /* Trip+CoreDataProperties.swift in Sources */,
 				E7CA667C2977D4B700F32535 /* TripItemTableViewCell.swift in Sources */,
+				1E4853B629D51AD1000DC891 /* TripCardView.swift in Sources */,
 				E7CA666F2977D2A700F32535 /* TripHelpers.swift in Sources */,
 				E7CA66A0297A80A500F32535 /* Location+CoreDataProperties.swift in Sources */,
 				E7CA66812977D4DA00F32535 /* TripDetailViewController.swift in Sources */,
 				E7CA66752977D49200F32535 /* TripEditController.swift in Sources */,
+				1E4853BE29D52660000DC891 /* TripSectionHeaderView.swift in Sources */,
 				E7CA667D2977D4B700F32535 /* TripDetailCollectionCell.swift in Sources */,
 				E7CA667F2977D4CB00F32535 /* MKPlacemark+Extension.swift in Sources */,
 				E7CA669F297A80A500F32535 /* Location+CoreDataClass.swift in Sources */,
 				E7CA66352977CEFA00F32535 /* AppDelegate.swift in Sources */,
+				1E4853B829D51C88000DC891 /* FavoriteTripsSectionView.swift in Sources */,
 				1E4853B429D3FB97000DC891 /* RecentTripsSectionView.swift in Sources */,
 				1E96A55129C9C0B00026AAE3 /* MultiLineNotesView.swift in Sources */,
 				E7CA663F2977CEFA00F32535 /* SampleApp.xcdatamodeld in Sources */,
@@ -261,6 +279,8 @@
 				1E4853B229D3F888000DC891 /* TripLargeCardView.swift in Sources */,
 				E7CA66652977D22200F32535 /* Trip+CoreDataClass.swift in Sources */,
 				E7CA66692977D25C00F32535 /* PersistanceController.swift in Sources */,
+				1E4853BA29D51D70000DC891 /* TripHorizontalListView.swift in Sources */,
+				1E4853BC29D5233A000DC891 /* TripsGridView.swift in Sources */,
 				1E4853B029D3F550000DC891 /* TripsContentView.swift in Sources */,
 				E7CA66762977D49200F32535 /* TripLocationSearchController.swift in Sources */,
 				E7CA66982979311A00F32535 /* PersistanceController+Trip.swift in Sources */,
