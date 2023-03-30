@@ -7,6 +7,7 @@
 
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,8 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
 
-        let rootViewController = TripLogsController()
-        window!.rootViewController = UINavigationController(rootViewController: rootViewController)
+        let rootViewController = TripsContentView()
+            .environment(\.managedObjectContext, PersistenceController.shared.persistentContainer.viewContext)
+        let hostingController = UIHostingController(rootView: rootViewController)
+        
+        window!.rootViewController = hostingController
         window!.makeKeyAndVisible()
 
         SampleData.generateSampleDataIfNeeded(
